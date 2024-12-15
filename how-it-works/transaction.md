@@ -30,7 +30,7 @@ The given nullifiers should be correctly derived from the input UTXOs.
 
 A zk transaction can create three types of outputs: UTXO, Withdrawal, and Migration. If the zk transaction creates UTXOs, Zkopru appends them to the UTXO tree. When it creates withdrawal outputs, Zkopru appends them to the withdrawal tree. Lastly, mass migration, which is a part of the layer-2 block, comprises the migration outputs of the block's every zk transaction.
 
-Therefore, the outflow should satisfy the followings:
+Therefore, the outflow should satisfy the following:
 
 1. When the output is a UTXO type, the public hash value of the output equal the calculated in the SNARK circuit.
 2. If the type of output is withdrawal or migration, it should reveal the details because it should move the correct amount of assets to the outside of the network.
